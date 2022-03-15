@@ -1,13 +1,17 @@
-public class Student {
+package edu.tr.maltepe.oop;
 
-    String std_name;
+public class Student extends Person {
+    private int id;
 
-    Student(String name){
-
-        std_name=name;
+    Student(String firstname_, String lastname_, int age_, int id_) {
+        super(firstname_, lastname_, age_);
+        id = id_;
     }
 
-    void learns(){
-
+    int getId(){
+        return this.id;
+    }
+    void setId(int newId){
+        this.id = newId;
     }
 }
